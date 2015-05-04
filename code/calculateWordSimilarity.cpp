@@ -78,6 +78,11 @@ void    work() {
     }
 }
 
+double  calcws(string a , string b) {
+    int a_index = index[a] , b_index = index[b];
+    return 0.0;
+}
+
 int main () {
     inputData();
     category();
