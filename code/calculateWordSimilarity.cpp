@@ -44,6 +44,7 @@ void    inputData() {
         n ++;
         N = n;
     }
+	fclose(stdin);
 }
 
 void    category() {
@@ -55,6 +56,7 @@ void    category() {
         int n = index[str];
         data[n].category_depth = category_depth;
     }
+	fclose(stdin);
 }
 
 void    work() {
@@ -77,6 +79,16 @@ void    work() {
                 }
             }
     }
+	
+	freopen("combine.txt","r",stdin);
+	freopen("ret.txt","w",stdout);
+	string a , b;
+	while (cin >> a) {
+		cin >> b;
+		cout << a << " " << b << " " << calcws(a,b) << endl;
+	}
+	fclose(stdin);
+	fclose(stdout);
 }
 
 double  calcws(string a , string b) {
