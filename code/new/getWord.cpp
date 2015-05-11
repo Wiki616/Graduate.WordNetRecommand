@@ -1,3 +1,8 @@
+/*
+  Author: Wiki
+  Date: 11/05/15 13:27
+  Description: get ALL words
+*/
 #include <iostream>
 #include <cstring>
 #include <cstdio>
